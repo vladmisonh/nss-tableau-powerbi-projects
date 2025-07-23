@@ -1,0 +1,804 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='disney_movies' inline='true' name='federated.1uccc5h1tu9img1djl7h51lt738e' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='disney_movies' name='textscan.1n22y240yq310a11p19cu1hcsjdx'>
+            <connection class='textscan' directory='I:/NSS/DA14/projects/tableau-da14-vladmisonh/data' filename='disney_movies.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1n22y240yq310a11p19cu1hcsjdx' name='disney_movies.csv' table='[disney_movies#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='movie_title' ordinal='0' />
+            <column datatype='date' name='release_date' ordinal='1' />
+            <column datatype='string' name='genre' ordinal='2' />
+            <column datatype='string' name='mpaa_rating' ordinal='3' />
+            <column datatype='integer' name='total_gross' ordinal='4' />
+            <column datatype='integer' name='inflation_adjusted_gross' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[disney_movies.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>movie_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[movie_title]</local-name>
+            <parent-name>[disney_movies.csv]</parent-name>
+            <remote-alias>movie_title</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[disney_movies.csv_B418669008E1457B909383F3B20E46ED]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[release_date]</local-name>
+            <parent-name>[disney_movies.csv]</parent-name>
+            <remote-alias>release_date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[disney_movies.csv_B418669008E1457B909383F3B20E46ED]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genre</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[genre]</local-name>
+            <parent-name>[disney_movies.csv]</parent-name>
+            <remote-alias>genre</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[disney_movies.csv_B418669008E1457B909383F3B20E46ED]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mpaa_rating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mpaa_rating]</local-name>
+            <parent-name>[disney_movies.csv]</parent-name>
+            <remote-alias>mpaa_rating</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[disney_movies.csv_B418669008E1457B909383F3B20E46ED]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_gross</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_gross]</local-name>
+            <parent-name>[disney_movies.csv]</parent-name>
+            <remote-alias>total_gross</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[disney_movies.csv_B418669008E1457B909383F3B20E46ED]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inflation_adjusted_gross</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[inflation_adjusted_gross]</local-name>
+            <parent-name>[disney_movies.csv]</parent-name>
+            <remote-alias>inflation_adjusted_gross</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[disney_movies.csv_B418669008E1457B909383F3B20E46ED]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='movie_count' datatype='integer' name='[Calculation_1732197065201569792]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([movie_title])' />
+      </column>
+      <column caption='total_gross' datatype='integer' name='[Calculation_1732197065201971201]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([total_gross])' />
+      </column>
+      <column caption='pg_or_no' datatype='string' name='[Calculation_1732197065203625986]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [mpaa_rating] = &quot;PG&quot; THEN &quot;PG&quot; ELSE &quot;Other&quot; END' />
+      </column>
+      <column caption='disney_movies.csv' datatype='table' name='[__tableau_internal_object_id__].[disney_movies.csv_B418669008E1457B909383F3B20E46ED]' role='measure' type='quantitative' />
+      <column caption='Genre' datatype='string' name='[genre]' role='dimension' type='nominal' />
+      <column caption='Inflation Adjusted Gross' datatype='integer' name='[inflation_adjusted_gross]' role='measure' type='quantitative' />
+      <column caption='Movie Title' datatype='string' name='[movie_title]' role='dimension' type='nominal' />
+      <column caption='Mpaa Rating' datatype='string' name='[mpaa_rating]' role='dimension' type='nominal' />
+      <column caption='Release Date' datatype='date' name='[release_date]' role='dimension' type='ordinal' />
+      <column caption='Total Gross' datatype='integer' name='[total_gross]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/PC/AppData/Local/Temp/TableauTemp/#TableauTemp_0p3uubz0a02m5v1bazawn0uwdloj.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/18/2025 11:39:56 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>movie_title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[movie_title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>movie_title</remote-alias>
+              <ordinal>0</ordinal>
+              <family>disney_movies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>573</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[disney_movies.csv_B418669008E1457B909383F3B20E46ED]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>release_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[release_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>release_date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>disney_movies.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>553</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[disney_movies.csv_B418669008E1457B909383F3B20E46ED]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genre</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genre]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genre</remote-alias>
+              <ordinal>2</ordinal>
+              <family>disney_movies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[disney_movies.csv_B418669008E1457B909383F3B20E46ED]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mpaa_rating</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[mpaa_rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mpaa_rating</remote-alias>
+              <ordinal>3</ordinal>
+              <family>disney_movies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[disney_movies.csv_B418669008E1457B909383F3B20E46ED]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_gross</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_gross]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_gross</remote-alias>
+              <ordinal>4</ordinal>
+              <family>disney_movies.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>576</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[disney_movies.csv_B418669008E1457B909383F3B20E46ED]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>inflation_adjusted_gross</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[inflation_adjusted_gross]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>inflation_adjusted_gross</remote-alias>
+              <ordinal>5</ordinal>
+              <family>disney_movies.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>576</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[disney_movies.csv_B418669008E1457B909383F3B20E46ED]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Ukraine&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='disney_movies.csv' id='disney_movies.csv_B418669008E1457B909383F3B20E46ED'>
+            <properties context=''>
+              <relation connection='textscan.1n22y240yq310a11p19cu1hcsjdx' name='disney_movies.csv' table='[disney_movies#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='movie_title' ordinal='0' />
+                  <column datatype='date' name='release_date' ordinal='1' />
+                  <column datatype='string' name='genre' ordinal='2' />
+                  <column datatype='string' name='mpaa_rating' ordinal='3' />
+                  <column datatype='integer' name='total_gross' ordinal='4' />
+                  <column datatype='integer' name='inflation_adjusted_gross' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Top 5 genre by total gross'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='disney_movies' name='federated.1uccc5h1tu9img1djl7h51lt738e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1uccc5h1tu9img1djl7h51lt738e'>
+            <column caption='movie_count' datatype='integer' name='[Calculation_1732197065201569792]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([movie_title])' />
+            </column>
+            <column caption='total_gross' datatype='integer' name='[Calculation_1732197065201971201]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([total_gross])' />
+            </column>
+            <column caption='Genre' datatype='string' name='[genre]' role='dimension' type='nominal' />
+            <column caption='Movie Title' datatype='string' name='[movie_title]' role='dimension' type='nominal' />
+            <column-instance column='[genre]' derivation='None' name='[none:genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_gross]' derivation='Sum' name='[sum:total_gross:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Gross' datatype='integer' name='[total_gross]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1732197065201569792]' derivation='User' name='[usr:Calculation_1732197065201569792:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1732197065201971201]' derivation='User' name='[usr:Calculation_1732197065201971201:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1uccc5h1tu9img1djl7h51lt738e].[none:genre:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([total_gross])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:genre:nk]' member='&quot;Action&quot;' />
+                  <groupfilter function='member' level='[none:genre:nk]' member='&quot;Adventure&quot;' />
+                  <groupfilter function='member' level='[none:genre:nk]' member='&quot;Black Comedy&quot;' />
+                  <groupfilter function='member' level='[none:genre:nk]' member='&quot;Comedy&quot;' />
+                  <groupfilter function='member' level='[none:genre:nk]' member='&quot;Concert/Performance&quot;' />
+                  <groupfilter function='member' level='[none:genre:nk]' member='&quot;Documentary&quot;' />
+                  <groupfilter function='member' level='[none:genre:nk]' member='&quot;Drama&quot;' />
+                  <groupfilter function='member' level='[none:genre:nk]' member='&quot;Horror&quot;' />
+                  <groupfilter function='member' level='[none:genre:nk]' member='&quot;Musical&quot;' />
+                  <groupfilter function='member' level='[none:genre:nk]' member='&quot;Romantic Comedy&quot;' />
+                  <groupfilter function='member' level='[none:genre:nk]' member='&quot;Thriller/Suspense&quot;' />
+                  <groupfilter function='member' level='[none:genre:nk]' member='&quot;Western&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1uccc5h1tu9img1djl7h51lt738e].[none:genre:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1uccc5h1tu9img1djl7h51lt738e].[sum:total_gross:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1uccc5h1tu9img1djl7h51lt738e].[none:genre:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1uccc5h1tu9img1djl7h51lt738e].[usr:Calculation_1732197065201971201:qk]' />
+              <tooltip column='[federated.1uccc5h1tu9img1djl7h51lt738e].[usr:Calculation_1732197065201569792:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1uccc5h1tu9img1djl7h51lt738e].[none:genre:nk]</rows>
+        <cols>[federated.1uccc5h1tu9img1djl7h51lt738e].[sum:total_gross:qk]</cols>
+      </table>
+      <simple-id uuid='{FEC75889-A1E8-4C72-87D7-FEB2E8AE03A4}' />
+    </worksheet>
+    <worksheet name='pie chart'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='disney_movies' name='federated.1uccc5h1tu9img1djl7h51lt738e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1uccc5h1tu9img1djl7h51lt738e'>
+            <column caption='pg_or_no' datatype='string' name='[Calculation_1732197065203625986]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [mpaa_rating] = &quot;PG&quot; THEN &quot;PG&quot; ELSE &quot;Other&quot; END' />
+            </column>
+            <column caption='Mpaa Rating' datatype='string' name='[mpaa_rating]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1732197065203625986]' derivation='None' name='[none:Calculation_1732197065203625986:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_gross]' derivation='Sum' name='[sum:total_gross:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Gross' datatype='integer' name='[total_gross]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='602' />
+            <format attr='height' value='456' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1uccc5h1tu9img1djl7h51lt738e].[none:Calculation_1732197065203625986:nk]' />
+              <size column='[federated.1uccc5h1tu9img1djl7h51lt738e].[sum:total_gross:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='1' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C7111EB0-E398-427E-9B1B-5E3D6D2093C8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='31395' id='3' name='Top 5 genre by total gross' w='99385' x='462' y='6628' />
+      </zones>
+      <devicelayouts>
+        <devicelayout active='true' name='Desktop'>
+          <size sizing-mode='automatic' />
+        </devicelayout>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='5' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98140' id='4' param='vert' type-v2='layout-flow' w='97538' x='1231' y='930'>
+                <zone fixed-size='270' h='31395' id='3' is-fixed='true' name='Top 5 genre by total gross' w='99385' x='462' y='6628'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D275B0FB-00CC-456A-BF39-0FE543D5DFD8}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Top 5 genre by total gross'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1uccc5h1tu9img1djl7h51lt738e].[none:genre:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F15F56AB-D947-4879-9AFE-B606CE9F7E50}' />
+    </window>
+    <window class='worksheet' maximized='true' name='pie chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1uccc5h1tu9img1djl7h51lt738e].[none:Calculation_1732197065203625986:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.1uccc5h1tu9img1djl7h51lt738e].[sum:total_gross:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1uccc5h1tu9img1djl7h51lt738e].[none:Calculation_1732197065203625986:nk]</field>
+            <field>[federated.1uccc5h1tu9img1djl7h51lt738e].[none:genre:nk]</field>
+            <field>[federated.1uccc5h1tu9img1djl7h51lt738e].[none:mpaa_rating:nk]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='1' />
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{A1C2EB70-7699-41DA-BD8E-A0213129C07D}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Top 5 genre by total gross' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{DF23888B-8A3A-4B9E-B66C-5FAB3911DF7D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      hY0AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='187' name='Top 5 genre by total gross' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='pie chart' width='192'>
+      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
+      QmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
